@@ -11,9 +11,10 @@ import java.util.regex.Pattern;
 
 // Domingo Poveda Lopez
 // Juan Jose Marin Peralta
+//validaAFD
 public class Ejercicio2 {
 	//error handler and constants
-	//public static final String ERROR_LECTURA_FICHERO = "Error. No se puede leer el fichero, porque: 1) Se ha equivocado al introducir el nombre del fichero; 2) la extensiÛn del fichero no es correcta.";
+	//public static final String ERROR_LECTURA_FICHERO = "Error. No se puede leer el fichero, porque: 1) Se ha equivocado al introducir el nombre del fichero; 2) la extensi√≥n del fichero no es correcta.";
 	public static final String ERROR_LECTURA_AUTOMATA = "Error. No se ha podido abrir el fichero del automata: ";
 
 	//Regular Expression to validate the extension file format
@@ -66,7 +67,7 @@ public class Ejercicio2 {
 		do{
 	        error = false;
 	        try {
-	        System.out.println("Por favor, introduzca el nombre del fichero (incluye extensiÛn): ");
+	        System.out.println("Por favor, introduzca el nombre del fichero (incluye extensi√≥n): ");
 	        fichero = entrada.nextLine();
 
 	            if(validaExtension(fichero)){
@@ -79,7 +80,7 @@ public class Ejercicio2 {
 	                cadena = entrada.nextLine();
 
 	                //recorro el automata para validar la cadena
-	                //meto m·s de una cadena que estÈ separada por ";"
+	                //meto m√°s de una cadena que est√© separada por ";"
 	                for(String resul : cadena.split(";")){
 	                    //System.out.println(esValida(automata, resul));
 	                	if(esValida(automata, resul))
@@ -88,7 +89,7 @@ public class Ejercicio2 {
 	                			System.out.println("*** Cadena <" + resul + "> rechazada ***");
 	                }
 	            }else {
-	            	System.out.println("Por favor, introduzca el nombre del fichero (incluye extensiÛn): ");
+	            	System.out.println("Por favor, introduzca el nombre del fichero (incluye extensi√≥n): ");
 	            	//System.err.println(ERROR_LECTURA_FICHERO);
 	            	error = true;
 	            	entrada = new Scanner(System.in);
